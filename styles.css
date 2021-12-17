@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+	margin:  0;
 }
 #menu li { 
     color: #2f4f23;
@@ -12,7 +12,7 @@
 }
 h1 {
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
 }
 #menu ul {
@@ -28,18 +28,45 @@ h1 {
     color:red;
     background: #F1F1F1;
 }
-img{
+img {
     display: inline-block;
 }
-body{
+body {
     background-color: #7a7a52;
 }
- 
-th td {
-    border: 1px solid black;
+.container{
+	margin:20px;
 }
-h1{
+h1 {
 	font-family:Arial;
 	text-align:center;
-	color:red
+	color:red;
+}
+#bangtinh table, th, td {
+  border:1px solid black;  /*tao bang voi net lien*/
+  text-align:center;
+  border-collapse:collapse;  /* gop khung */
+}
+footer {
+	background-color:#009900;
+	width:100%;
+	height:auto;
+	display:flex; /* bo cuc linh hoat */
+}
+.aboutme {
+	float:left;
+	padding:5px;
+	margin:5px;
+}
+.diachi {
+	float:right;
+	padding:5px;
+	margin:5px;
+}
+.thongtin {
+	list-style-type:none;
+}
+.social {
+     display: flex;
+	 list-style-type:none;
 }

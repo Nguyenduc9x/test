@@ -1,17 +1,17 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="vi">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Look at Handsome Guy</title>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- load icon  -->
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-	
-        <div id="menu">
+	<script type="text/javascript" src="myScript.js"></script>
+		<div id="menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About me</a></li>
@@ -19,12 +19,81 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-			<h1>Handsome Boy</h1>
-			<br>
-			<img src="https://learnhtml1.w3spaces.com/khi_cuoi.jpg" alt="anh cuoi" >
+		<div class="container">
+			<h1>Handsome Boy</h1><br>
+			<img src="https://learnhtml1.w3spaces.com/khi_cuoi.jpg" alt="anh cuoi" width="300px" height="140px">
 				<p><em>hahalodfdf</em><p>
+				
+				<p> Khi bạn cảm thấy không vui hãy ấn vào nút bên dưới </p>
+					<img id="myImage" src="https://learnhtml1.w3spaces.com/buon.jpg" style="width:300px">
+					<button onclick="document.getElementById('myImage').src='https://learnhtml1.w3spaces.com/khi_cuoi.jpg'">Ấn vào đây</button>
 			<h2>con ga moi</h2>
 				<p> Nha tui co nhieu con ga moi de. No de ra nhieu TVL</p>
-    </body>
+   
+			<div id="bangtinh">
+				<table style="width:100%">
+					<caption style="text-top:center"> Bảng tính 2 ngày </caption>
+					<tr>
+						<th>Ngày 1</th>
+						<th>Ngày 2</th>
+						<th>Tổng</th>
+					</tr>
+					<tr>
+						<td>34</td>
+						<td>16</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>14</td>
+						<td>30</td>
+					</tr>
+				</table>
+			</div>
+			<p>hien van ban khi click vao button</p>
 
+				<p id="demo"></p>
+
+				<button type="button" onclick="myFunction()">Click Me!</button>
+					<p id="van1"></p>	
+					<p id="van2"></p>
+					
+				<button type="button" onclick="document.write(11)">click to me</button> <!-- document.write xoa html roi hien thi --> 
+				
+			<h3> JavaScript nhap 1 day </h3>
+				<button type="button" onclick="chayso()"> day so </button>
+					<p id="t1"></p>
+			<h4> 3 bang 4 </h4>
+			<button type="button" onclick="dungsai()"> an de so sanh </button>
+					<p id="t2"></p>
+		</div>	
+	</body>
+	
+	<footer>
+		<div class="noidung">
+			<div class="aboutme">
+				<h2>About Me</h2>
+					<p> Chào mừng bạn đã đến website của chúng tôi </p>
+					<ul class="social">
+						<li><a href=""><i class="fab fa-facebook"></i></a></li> <!-- icon co duong dan -->
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+						<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					</ul>
+			</div>
+			<div class="diachi">
+				<h2> Thong tin lien he </h2>
+					<ul class="thongtin">
+						<li>
+							<span><i class="fas fa-home"></i></span>
+							<span>dia chi nha</span>
+						</li>
+						<li>
+							<span><i class="fas fa-mail-bulk"></i></span>
+							<a href="#"> halo@gmail.com </a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</footer>
 </html>
