@@ -98,3 +98,21 @@ function callname(first, last)
             result = callname('aho', 'tana');
             document.write (result );
          }
+function hopthoai(){
+               var t = confirm("ban co muon tiep tuc khong ?");
+               if( t == true ){
+                  document.write ("toi muon");
+                  return true;
+               }
+               else{
+                  Document.write ("toi khong muon");
+                  return false;
+			   }
+		}
+function hopnhapchu(){
+               var k = prompt("Enter your name : ", "your name here");
+			  
+               document.write("You have entered : " + k);
+			   
+			   
+            }		
